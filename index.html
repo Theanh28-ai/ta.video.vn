@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Đăng Video</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="#">Trang Video Của Tôi</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#upload-section">Đăng Video</a></li>
+                    <li><a href="#video-list-section">Xem Video</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="upload-section" class="container">
+            <h2>Đăng Video Mới</h2>
+            <div class="upload-box">
+                <input type="file" id="videoUpload" accept="video/*" style="display: none;">
+                <label for="videoUpload" class="upload-button">
+                    <i class="fas fa-cloud-upload-alt"></i> Chọn Video
+                </label>
+                <span id="fileNameDisplay" class="file-name-display">Chưa có file nào được chọn</span>
+                <button id="displayVideoBtn" class="btn" disabled>Hiển thị Video</button>
+            </div>
+            <div id="videoPreview" class="video-preview-container">
+                </div>
+        </section>
+
+        <section id="video-list-section" class="container">
+            <h2>Các Video Đã Đăng (Giả lập)</h2>
+            <div id="uploadedVideos" class="video-grid">
+                <p>Các video bạn tải lên sẽ hiển thị ở đây (chỉ trong phiên làm việc hiện tại).</p>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Trang Video. Mọi quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
